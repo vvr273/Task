@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+         
+         .right-align {
+        text-align: right;
+    }
+
+       
+        td,table{
+            
+        border:  solid black;
+        }
+        table{
+            border-collapse: collapse;
+            align-items: center;
+            margin: 1px;
+                    }
+        
+    </style>
+</head>
+<body>
+    <h1 style="color: blue; text-align: center;" >Registration Form</h1>
+    <form action="">
+        <table>
+            <tr>
+            <td><label for="Firstname">First name</label></td>
+            <td><input type="text" name="First name" id="fname" ></td></tr>
+            <tr><td><label for="Last name">Last Name</label></td>
+            <td><input type="text"></td></tr>
+            <tr>
+                <td ><label for="Email">Email</label></td>
+                <td><input type="email" name="" id=""></td>
+            </tr>
+            <tr>
+            <td><label for="Password">Passowrd</label></td>
+            <td><input type="password" name="password" id="password"></td></tr>
+            <tr>
+                <td><label for="repassword">Re Password</label></td>
+                <td><input type="password" name="" id=""></td>
+            </tr>
+            <tr>
+        <td><label for="Gender">Gender</label></td>
+        <td>
+            <table class="nested-table">
+                <tr>
+                    <td><input type="radio" name="gender" id="male"> Male</td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gender" id="female"> Female</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+            
+            <tr>
+            <td><label for="Age">Age:</label></td>
+            <td><input type="number" name="age" id="age"></td></tr>    
+            
+            <tr>
+                <td><label for="Address">Address</label></td>
+                <td><textarea name="Address" id="Address"></textarea></td>
+            </tr>
+            <tr><td><label for="State">State</label></td>
+            <td><input type="text"></td></tr>
+            <tr>
+            <td><label for="Country">COuntry</label></td>
+            <td><select name="Countries" id="COuntries">
+
+                <option value="Select the country">Select the country</option>
+                <option value="">India</option>
+                <option value="">Paksitan</option>
+                <option value="">Srilanka</option>
+                <option value="">Bangladesh</option>
+            </select></td></tr>
+            <tr><td><label for="languages">Languages Known</label></td>
+            <td>
+                <input type="checkbox" name="" id="">Hindi
+                <input type="checkbox" name="" id="">Telugu
+                <input type="checkbox" name="" id="">Tamil
+                <input type="checkbox" name="" id="">Urdu
+            </td>
+            
+            </tr>
+            <tr ><td colspan="2" ><input type="checkbox" name="" id=""> Hereby I Declare all the Details are True</td></tr>
+            <tr><td class="right-align" colspan="2">
+            Login to <a href="./loginforms.html">Ethnus</a> Website
+        </td>
+                
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

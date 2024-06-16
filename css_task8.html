@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(165, 42, 93);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+        }
+        form{
+            
+            display: flex;
+            flex-direction: column;
+         
+
+                }
+                .form_container{
+                    margin-top: 200px;
+                    margin-left: 200px;
+                    width: 400px;
+                    height: 400px;
+                    background-color: rgba(69, 6, 28, 0.337);
+                    padding: 20px;
+                    border-radius: 8px; 
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+
+
+            input[type=text],[type=email],[type=password],[type=number],[type=select]{
+            width: 200px;
+            height: 30px;
+            border-radius: 5px;
+        }
+        .input{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+       input:hover{
+            box-shadow: 10px 10px 10px black;
+            outline-color: blue;
+        }
+        label {
+            color: #FFFFFF;
+            width: 150px;
+            margin-right: 10px;
+        }
+        #select:hover{
+            box-shadow: 10px 10px 10px blue;
+            cursor: pointer;
+        }
+        option:hover{
+            box-shadow: 10px 10px 10px blue;
+            cursor: pointer;
+        }
+        #button{
+            position: absolute;
+            top: 10px;
+            left: 100px;
+            margin: 30px;
+           
+        }
+        button{
+
+            height:50px;
+            width: 200px;
+        }
+        button:hover{
+            box-shadow: 10px 10px 10px skyblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="form_container">
+        <form action="" class="register">
+            <div class="input"><label for="">Name:</label>
+             <input type="text" name="" id="nmae" placeholder="your name"></div>
+            
+            <div class="input"><label for="">Email:</label>
+             <input type="email" name="" id="" placeholder="your email">
+            </div>
+            <div class="input">
+             <label for="">Password:</label>
+             <input type="password" name="" id="" placeholder="enter the password">
+            </div>
+            <div class="input">
+             <label for="">Language</label>
+             <select id="select" style="width: 200px; height: 30px; ">
+                 <option value="">Hindi</option>
+                 <option value="">Telugu</option>
+                 <option value="">English</option>
+                 <option value="">German</option>
+             </select>  
+            </div>
+            <div class="input">
+             <label for="">Zip Code</label>
+             <input type="number" name="" id="">
+            </div>
+              
+            
+             <div class="input" style="flex: 1;">
+                 <label for="">Gender:</label>
+             <input type="radio" name="Gender">
+             <label for="">Male</label>
+            <input type="radio" name="Gender">
+             <label for="">Female</label>
+             </div>
+             
+             <div class="input"><label for="" >About:</label>
+                 <textarea name="" id="" placeholder="write About yourself" style="color: red;"></textarea></div>
+             
+             <div class="input" id="button" style="position: relative;">
+                <button type="button">Register</button>
+             </div>
+         </form>
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>

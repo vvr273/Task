@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .form-container {
+            background: #e2ffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 1em;
+        }
+
+        fieldset {
+            border: 2px solid #d10404;
+            padding: 20px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: solid 1px orange;
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 10px;
+            vertical-align: middle;
+        }
+
+        input, textarea, select {
+            width: calc(100% - 120px);
+            padding: 0.5em;
+            margin-bottom: 10px;
+            border: 1px solid #533b3b;
+            border-radius: 4px;
+            vertical-align: middle;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        
+
+        button {
+            width: 200px;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .reset {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            border: solid 1px black;
+        }
+
+        #forgot {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        #forgot:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="" class="form">
+            <fieldset>
+                <img src="./employee.png" alt="employee avatar">
+                
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password">
+                </div>
+                
+                <button id="button" type="submit">Login</button>
+                
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                
+                <div class="reset">
+                    <button type="reset" id="cancel">Cancel</button>
+                    <a href="./passwordreset.html" target="_blank" id="forgot">Forgot password</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

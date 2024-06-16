@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        body{
+            justify-items: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            background-repeat: no-repeat;
+            
+            background-attachment: fixed;
+        }
+        h1{
+            margin-top: 0;
+            
+        }
+         .Verticalnavbar{
+            height: 17.4rem;
+            width:300px;
+            border: solid black 1px;
+            
+         }
+         .lis{
+
+            color: blue;
+            font-size: 2rem;
+            text-align: center;
+            height:3rem;
+            width: 300px;
+            background-color: skyblue;
+
+         }
+         #uls{
+            display: block;
+            margin-top: 0;
+            padding-top: 0;
+            padding-left: 0;
+            padding-bottom: 0;
+            padding-right: 0;
+         }
+         .lis:hover{
+            background-color: rgb(0, 136, 255);
+            color: skyblue;
+         }
+         .Verticalnavbarhead:hover{
+            color: red;
+            background-color: blue;
+         }
+         #home{
+            
+         }
+         .horizontalnavbarnav{
+            border: solid black 1px;
+            display: inline-flex;
+         }
+         a{
+            color: white;
+           border: solid blue 1px;
+           font-size: 2rem;
+            text-align: center;
+            height:3rem;
+            width: 150px;
+            text-decoration: none;
+            background-color: rgba(150, 148, 148, 0.301);
+         }
+         a:hover{
+            color: orange;
+            background-color: grey;
+         }
+         .horizontalnavbar{
+            border: 1px solid black;
+            padding: 10px;
+         }
+    </style>
+</head>
+   <body>
+    <div class="Verticalnavbar"><h1 class="Verticalnavbarhead" style="text-align: center; background-color: orange; margin-bottom: 0;" >Vertical Nav Bar</h1>
+    <nav>
+        <ul id="uls" style="list-style-type: none;" >
+            <li class="lis" id="li1" style="margin-top: 0;">Home</li>
+            <li class="lis" id="li2">Java</li>
+            <li class="lis" id="li3">Css</li>
+            <li class="lis"  id="li4">Html</li>
+            <li class="lis" id="li5">Bootstrap</li>
+        </ul>
+
+
+
+
+    </nav>
+
+    
+    
+    </div>
+ 
+    <div class="horizontalnavbar" style="margin: 100px;">
+         <h1 style="text-align: center;color: rgb(6, 2, 2); ">
+            horizontalnavbar
+
+         </h1>
+
+         <nav class="horizontalnavbarnav">
+              <a href="" target="_blank" id="Home" style="background-color: grey;" >
+               Home
+              </a>
+              <a href="" target="_blank" >
+              Java
+              </a>
+              <a href="" target="_blank" >
+            Css
+              </a>
+              <a href="" target="_blank" >
+                  Bootstrap
+              </a>
+              <a href="" target="_blank" >
+                Html
+              </a>
+         </nav>
+    </div>
+
+   </body>
+</html>
